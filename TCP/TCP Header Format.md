@@ -1,4 +1,4 @@
-## TCP header format
+## TCP Header Format
 
 ![TCP-header](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/TCP-header.png)
 
