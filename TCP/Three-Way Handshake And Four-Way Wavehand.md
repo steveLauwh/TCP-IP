@@ -12,14 +12,20 @@
 
 ## Four-Way Wavehand
 
-** TCP 断开连接，需要经过四次挥手操作 **
+**TCP 断开连接，需要经过四次挥手操作**
 
-第一次挥手：
+第一次挥手：主机 A (既可以是 Client，也可以是 Server)，设置 `Sequence Number` 和 `Acknowledgement Number`，向主机 B 发送一个 `FIN` 报文段，此时，主机 A 进入`FIN_WAIT_1` 态；表示主机 A 没有数据要发送给主机 B。
 
+第二次挥手：主机 B 收到了主机 A 发送的 FIN 报文段，然后向主机 A 回复一个 ACK 报文段，该 `Acknowledgement Number = Sequence Number+1`；主机 A 进入 `FIN_WAIT_2` 态；主机 B 告诉主机 A，也没有数据要发送，可以进行关闭连接。
 
-当客户端和服务器通过三次握手建立了TCP连接以后，当数据传送完毕，肯定是要断开TCP连接的啊。那对于TCP的断开连接，这里就有了神秘的“四次分手”。
-第一次分手：主机1（可以使客户端，也可以是服务器端），设置Sequence Number和Acknowledgment Number，向主机2发送一个FIN报文段；此时，主机1进入FIN_WAIT_1状态；这表示主机1没有数据要发送给主机2了；
-第二次分手：主机2收到了主机1发送的FIN报文段，向主机1回一个ACK报文段，Acknowledgment Number为Sequence Number加1；主机1进入FIN_WAIT_2状态；主机2告诉主机1，我也没有数据要发送了，可以进行关闭连接了；
-第三次分手：主机2向主机1发送FIN报文段，请求关闭连接，同时主机2进入CLOSE_WAIT状态；
-第四次分手：主机1收到主机2发送的FIN报文段，向主机2发送ACK报文段，然后主机1进入TIME_WAIT状态；主机2收到主机1的ACK报文段以后，就关闭连接；此时，主机1等待2MSL后依然没有收到回复，则证明Server端已正常关闭，那好，主机1也可以关闭连接了。
-至此，TCP的四次分手就这么愉快的完成了。当你看到这里，你的脑子里会有很多的疑问，很多的不懂，感觉很凌乱；没事，我们继续总结。
+第三次挥手：主机 B 向主机 A 发送 FIN 报文段，设置 `Sequence Number`，请求关闭连接，同时主机 B 进入 CLOSE_WAIT 态。
+
+第四次挥手：主机 A 收到主机 B 发送 FIN 报文段，向主机 B 发送 ACK 报文段，该 `Acknowledgement Number = Sequence Number+1`，然后主机 A 进入 `TIME_WAIT` 态，主机 B 收到主机 A 的 ACK 报文段后，就关闭连接。此时，主机 A 等待 2MSL后依然没有收到回复，则证明主机 B 已正常关闭，那么，主机 A 也可以关闭连接。
+
+## 为什么需要三次握手建立连接？
+
+通信双方要互相通知对方自己的初始化 Sequence Number(Inital Sequence Number)，所以叫 SYN(Synchronize Sequence Number)。Sequence Number 是以后的数据通信的序号，用来保证应用层接收到的数据不会因为网络上的传输问题而乱序。
+
+## 为什么需要四次挥手断开连接？
+
+因为 TCP 是全双工的，所以发送方和接收方都需要 FIN 和 ACK。只不过由一方发起，另一方是被动的，所以看上去是四次挥手。如果两边同时断开连接，那就会进入到 CLOSING 态，然后都到达 TIME_WAIT 态。
