@@ -1,8 +1,8 @@
 ## Three-Way Handshake
 
-![Three-Way Handshake]()
+![](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/tcp_open_close.jpg)
 
-** TCP 建立连接，需要经过三次握手操作 **
+**TCP 建立连接，需要经过三次握手操作**
 
 第一次握手：由 Client 向 Server (对于 Server 来说，处于 `LISTEN` 态)发送连接请求报文段，将 SYN 标志位置为 1，`Sequence Number` 为 `x`；然后，然后客户端处于 `SYN_SEND` 态，等待 Server 确认。
 
@@ -11,8 +11,6 @@
 第三次握手：Client 收到 Server 的 SYN+ACK 报文段，然后将 `Acknowledgement Number` 设置为 `y+1`(对 server 的 Sequence Number 加1)，向 Server 发送 ACK 报文段，这个报文段发送完毕后，Client 和 Server 都进入 `ESTABLISHED` 态。
 
 ## Four-Way Wavehand
-
-![Four-Way Wavehand]()
 
 ** TCP 断开连接，需要经过四次挥手操作 **
 
