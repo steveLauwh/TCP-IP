@@ -1,7 +1,7 @@
 ## TCP 知识点
 
 * ![TCP 头格式](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Header%20Format.md)
-* ![TCP 三次握手和四次握手](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/Three-Way%20Handshake%20And%20Four-Way%20Wavehand.md)
+* ![TCP 三次握手和四次挥手](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/Three-Way%20Handshake%20And%20Four-Way%20Wavehand.md)
 * ![TCP 状态机](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20FSM.md)
 
 ## 参考资料
