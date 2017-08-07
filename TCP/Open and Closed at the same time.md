@@ -1,5 +1,7 @@
 ## TCP 同时打开
 
+![](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/tcpopensimul.PNG)
+
 两个应用程序同时执行打开的情况是可能的，虽然发生的可能性较低。每一端都发送一个 SYN，并传递给对方，且每一端都使用对端所知的端口作为本地端口。
 
 例如：
