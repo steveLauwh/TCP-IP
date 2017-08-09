@@ -15,7 +15,7 @@ net.ipv4.tcp_fin_timeout = 30
 
 然后执行 /sbin/sysctl -p 让参数生效。
 
-注释：
+注解：
 
 `net.ipv4.tcp_syncookies = 1` 表示开启 SYN Cookies。当出现 SYN 等待队列溢出时，启用 cookies 来处理，可防范少量 SYN 攻击，默认为 0，表示关闭。
 
