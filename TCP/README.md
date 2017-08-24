@@ -8,6 +8,7 @@
 * [解决大量 TIME_WAIT](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/Resolve%20a%20lot%20of%20TIME_WAIT.md)
 * [TCP 超时和重传](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Retransmission%20Mechanism.md)
 * [TCP 疑问和解答](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Q%26A.md)
+* [TCP 滑动窗口](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Sliding%20Window)
 
 ## 参考资料
 
