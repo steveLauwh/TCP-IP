@@ -11,4 +11,8 @@
 
 # 参考资料
 
-* [TCP/IP详解 卷1：协议](https://book.douban.com/subject/1088054/)
+* [TCP/IP详解 卷1 ：协议](https://book.douban.com/subject/1088054/)
+* [图解TCP/IP : 第5版](https://book.douban.com/subject/24737674/)
+* [图解 HTTP](https://book.douban.com/subject/25863515/)
+* [HTTP 权威指南](https://book.douban.com/subject/10746113/)
+
