@@ -7,6 +7,11 @@
 ## 抓包工具
 
 * Wireshark ：TCP、UDP等
+  + Wireshark数据包分析实战
+  + Wireshark网络分析实战
+  + Wireshark网络分析就是这么简单
+  + Wireshark网络分析的艺术
+  
 * Fiddler ：HTTP、HTPPS
 
 # 参考资料
@@ -15,5 +20,6 @@
 * [图解TCP/IP : 第5版](https://book.douban.com/subject/24737674/)
 * [图解 HTTP](https://book.douban.com/subject/25863515/)
 * [HTTP 权威指南](https://book.douban.com/subject/10746113/)
-* [RFC地址](https://www.ietf.org/rfc/)
+* [RFC](https://www.ietf.org/rfc/)
+* http://www.sharetechnote.com/
 
