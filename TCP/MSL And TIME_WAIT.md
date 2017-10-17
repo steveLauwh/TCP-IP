@@ -22,6 +22,6 @@ TCP 不允许在 TIME_WAIT 态的连接启动一个新的连接，因为 TIME_WA
 
 ## TIME_WAIT 的不好之处以及采取什么措施
 
-**不好之处：**Linux 分配给一个用户的文件句柄是有限的，如果系统中存在大量的 TIME_WAIT 状态，一旦达到句柄数上限，新的请求就无法被处理了，而且大量 TIME_WAIT 连接占用资源影响性能。(大量 TIME_WAIT 会占用系统资源，影响性能)
+**不好之处：** Linux 分配给一个用户的文件句柄是有限的，如果系统中存在大量的 TIME_WAIT 状态，一旦达到句柄数上限，新的请求就无法被处理了，而且大量 TIME_WAIT 连接占用资源影响性能。(大量 TIME_WAIT 会占用系统资源，影响性能)
 
-**采取措施：**在 /etc/sysctl.conf 文件中开启 net.ipv4.tcp_tw_reuse 重用和 net.ipv4.tcp_tw_recycle 快速回收。
+**采取措施：** 在 /etc/sysctl.conf 文件中开启 net.ipv4.tcp_tw_reuse 重用和 net.ipv4.tcp_tw_recycle 快速回收。
