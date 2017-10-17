@@ -14,6 +14,10 @@ TCP 滑动窗口默认大小为 4096 个字节。
 
 TCP 滑动窗口分为发送窗口和接收窗口。
 
+发送窗口：
+
+![](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/tcpslidewindow.jpg)
+
 > 对于 TCP 会话的发送方，任何时候在其发送缓存内的数据都可以分为 4 类：
 
 * 已经发送并得到对端 ACK
