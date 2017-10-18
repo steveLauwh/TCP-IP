@@ -22,4 +22,5 @@
 * [HTTP 权威指南](https://book.douban.com/subject/10746113/)
 * [RFC](https://www.ietf.org/rfc/)
 * http://www.sharetechnote.com/
+* http://blog.csdn.net/goodboy1881/article/category/204448
 
