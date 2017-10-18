@@ -1,4 +1,4 @@
-## TCP 知识点
+﻿## TCP 知识点
 
 * [TCP 头格式](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Header%20Format.md)
 * [TCP 三次握手和四次挥手](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/Three-Way%20Handshake%20And%20Four-Way%20Wavehand.md)
@@ -10,6 +10,12 @@
 * [TCP 滑动窗口](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Sliding%20Window.md)
 * [TCP 拥塞控制](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Congestion%20Control.md)
 * [TCP 疑问和解答](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Q%26A.md)
+
+## TCP 协议传输
+
+当应用程序用 TCP 传送数据时，数据被送入协议栈，然后逐个通过每一层直到被当作一串比特流送入网络，其中每一层对收到的数据都要增加一些首部信息。
+
+![](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/tcptransfer.png)
 
 
 ## 参考资料
