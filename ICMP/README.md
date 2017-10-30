@@ -2,7 +2,7 @@
 
 ### ICMP 含义
 
-ICMP(INTERNET CONTROL MESSAGE PROTOCOL)网络控制消息协议
+ICMP(INTERNET CONTROL MESSAGE PROTOCOL) 网络控制报文协议
 
 ICMP 报文是 IP 报文的一部分；一个 IP 报文是由 IP 头部和 ICMP 报文组成。
 
