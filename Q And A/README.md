@@ -8,3 +8,8 @@
 * TCP 有超时重发、流量控制等机制，而 UDP 没有
 
 
+## 参考
+
+* [TCP协议疑难杂症全景解析](http://blog.csdn.net/dog250/article/details/6612496)
+* [UDP协议疑难杂症全景解析](http://blog.csdn.net/dog250/article/details/6896949)
+* [TCP UDP](https://www.qcloud.com/community/user/156648)
