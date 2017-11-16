@@ -6,6 +6,8 @@
 * `cd /proc/sys/net/ipv4` 
 * 如果修改或新增参数：`vim /etc/sysctl.conf`，然后让内核参数生效：`/sbin/sysctl -p`
 
+核心参数可以使用 `sysctl 参数名`，`sysctl -w 参数名=值` 修改(需要 root 权限)，`sysctl -a` 查看全部核心参数。
+
 查看当前 TCP/IP 连接的状态和对应的个数：`netstat -n | awk '/^tcp/ {++S[$NF]} END {for(a in S) print a, S[a]}'`
 
 > **net.ipv4.tcp_syncookies**
@@ -64,7 +66,8 @@ linux内核参数调优主要有下面三个：
 
 * 增大 tcp_max_syn_backlog
 * 减小 tcp_synack_retries
-* 开启 tcp_syncookies
+* 开启 tcp_abort_on_overflow
+* 开启 tcp_syncookies(不建议打开)
 
 ### 解决大量 TIME_WAIT 消息
 
