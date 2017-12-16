@@ -11,7 +11,8 @@
 
 ## 参考资料
 
+* [HTTP|MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
+* [HTTPie-HTTP 的命令行客户端](https://github.com/jakubroztocil/httpie)
 * [中文 RFC 文档目录](http://man.chinaunix.net/develop/rfc/default.htm)
-
 * [RFC Search](https://www.rfc-editor.org/search/rfc_search.php)
 
