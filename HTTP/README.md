@@ -15,4 +15,5 @@
 * [HTTPie-HTTP 的命令行客户端](https://github.com/jakubroztocil/httpie)
 * [中文 RFC 文档目录](http://man.chinaunix.net/develop/rfc/default.htm)
 * [RFC Search](https://www.rfc-editor.org/search/rfc_search.php)
+* [WEB请求处理系列](http://www.jianshu.com/p/558455228c43)
 
