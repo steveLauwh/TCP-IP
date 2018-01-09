@@ -12,6 +12,8 @@
 * [Linux 下 TCP/IP 核心参数](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/ip-systl.md)
 * [TCP 疑问和解答](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/TCP%20Q%26A.md)
 
+![](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/TCP.png)
+
 ## TCP 协议传输
 
 当应用程序用 TCP 传送数据时，数据被送入协议栈，然后逐个通过每一层直到被当作一串比特流送入网络，其中每一层对收到的数据都要增加一些首部信息。
