@@ -8,6 +8,7 @@
 * [HTTPS](https://github.com/steveLauwh/TCP-IP/blob/master/HTTP/HTTPS.md)
 * [HTTP Q&A](https://github.com/steveLauwh/TCP-IP/blob/master/HTTP/HTTP%20Q%20%26%20A.md)
 
+![](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/HTTP.png)
 
 ## 参考资料
 
