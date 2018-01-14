@@ -12,6 +12,7 @@
 
 ## 参考资料
 
+* [In Introduction to HTTP Basics](https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
 * [HTTP|MDN](https://developer.mozilla.org/zh-CN/docs/Web/HTTP)
 * [HTTPie-HTTP 的命令行客户端](https://github.com/jakubroztocil/httpie)
 * [中文 RFC 文档目录](http://man.chinaunix.net/develop/rfc/default.htm)
