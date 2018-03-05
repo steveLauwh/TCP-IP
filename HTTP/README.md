@@ -10,6 +10,10 @@
 
 ![](https://github.com/steveLauwh/TCP-IP/raw/master/TCP/image/HTTP.PNG)
 
+![](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/image/Request%20Headers.PNG)
+
+![](https://github.com/steveLauwh/TCP-IP/blob/master/TCP/image/Response%20Headers.PNG)
+
 ## 参考资料
 
 * [In Introduction to HTTP Basics](https://www.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
